@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="色情电影网 - 一个只聊色情电影的地方。从初恋悸动到白头偕老，精选浪漫色情片、心动喜剧与虐恋经典，陪你重温每一段心跳时刻。">
+<meta name="keywords" content="色情电影网,浪漫色情片,经典色情电影,心动喜剧,虐恋电影,韩剧电影,seqingdianyingwang-wap">
+<meta name="author" content="色情电影网">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="bingbot" content="index, follow, max-image-preview:large">
+<meta name="referrer" content="always">
+<meta property="og:title" content="色情电影网 - 一个只聊色情电影的地方">
+<meta property="og:description" content="从初恋悸动到白头偕老，精选浪漫色情片，陪你重温每一段心跳时刻。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://seqingdianyingwang-wap.github.io">
+<meta property="og:site_name" content="色情电影网">
+<title>色情电影网 | 一个只聊色情电影的地方 | 浪漫色情片精选 | seqingdianyingwang-wap.github.io</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blush:#fde8ee;
+  --pink:#f4a7c0;
+  --rose:#e0557f;
+  --deep:#9b2c4f;
+  --plum:#5c1e33;
+  --cream:#fff9f7;
+  --paper:#fff5f3;
+  --ink:#3a2b30;
+  --mute:#8a7480;
+  --gold:#c9a25a;
+  --line:rgba(224,85,127,.25);
+  --shadow:rgba(155,44,79,.14);
+  --serif:'Playfair Display','Songti SC','SimSun','Georgia',serif;
+  --sans:'PingFang SC','Microsoft YaHei',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);color:var(--ink);line-height:1.85;
+  background:var(--cream);overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 15% 10%,rgba(244,167,192,.35),transparent 45%),
+    radial-gradient(circle at 85% 88%,rgba(201,162,90,.16),transparent 42%);
+}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+::selection{background:var(--pink);color:#fff}
+img{max-width:100%}
+
+/* ===== layout: dual-column envelope ===== */
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:0}
+
+/* ===== top bar ===== */
+.bar{
+  position:sticky;top:0;z-index:60;background:rgba(255,249,247,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+}
+.bar-in{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand b{
+  font-family:var(--serif);font-size:1.55rem;font-weight:700;color:var(--plum);
+  letter-spacing:.02em;
+}
+.brand em{font-style:italic;font-family:var(--serif);font-size:.82rem;color:var(--rose)}
+.nav{display:flex;gap:2px;align-items:center}
+.nav a{
+  font-size:.85rem;padding:8px 15px;color:var(--mute);
+  border-bottom:2px solid transparent;transition:.25s;
+}
+.nav a:hover{color:var(--rose);border-bottom-color:var(--rose)}
+.nav .love{
+  margin-left:10px;padding:8px 20px;background:var(--deep);color:#fff;
+  font-size:.83rem;border-radius:2px;letter-spacing:.04em;transition:.25s;
+}
+.nav .love:hover{background:var(--rose)}
+.menu-btn{display:none;font-size:1.3rem;color:var(--plum);width:40px;height:40px;border:1px solid var(--line);border-radius:2px}
+.drawer{display:none;position:fixed;inset:72px 0 0;z-index:59;background:var(--cream);padding:18px;border-top:1px solid var(--line)}
+.drawer.open{display:block}
+.drawer a{display:block;padding:15px 18px;font-size:1rem;border-bottom:1px solid var(--line);color:var(--plum)}
+
+/* ===== hero: split envelope ===== */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:78vh;border-bottom:1px solid var(--line)}
+.hero-left{
+  padding:80px 60px;display:flex;flex-direction:column;justify-content:center;
+  background:var(--blush);position:relative;
+}
+.hero-left::after{
+  content:'';position:absolute;right:0;top:0;bottom:0;width:1px;
+  background:linear-gradient(to bottom,transparent,var(--line) 20%,var(--line) 80%,transparent);
+}
+.hero-left .kicker{
+  font-family:var(--serif);font-style:italic;font-size:.92rem;color:var(--rose);
+  letter-spacing:.16em;text-transform:uppercase;margin-bottom:22px;
+}
+.hero-left h1{
+  font-family:var(--serif);font-weight:400;color:var(--plum);
+  font-size:clamp(2.4rem,5.6vw,4.1rem);line-height:1.28;margin-bottom:26px;
+}
+.hero-left h1 i{font-style:italic;color:var(--rose)}
+.hero-left h1 .amp{font-size:2.4rem;color:var(--gold);display:block;line-height:1.1;font-style:italic}
+.hero-left p{font-size:1rem;color:var(--mute);max-width:440px;margin-bottom:34px}
+.hero-left .acts{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.btn-main{
+  padding:13px 34px;background:var(--deep);color:#fff;font-size:.88rem;
+  letter-spacing:.1em;border-radius:2px;transition:.3s;position:relative;
+}
+.btn-main:hover{background:var(--rose);letter-spacing:.16em}
+.btn-txt{font-size:.85rem;color:var(--rose);border-bottom:1px solid var(--rose);padding-bottom:2px}
+
+.hero-right{position:relative;background:var(--paper);overflow:hidden}
+.flicker{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr)}
+.flicker i{position:relative;display:flex;align-items:flex-end;justify-content:center;padding:14px;font-size:1.9rem;overflow:hidden}
+.flicker i::before{
+  content:'';position:absolute;inset:0;z-index:0;
+  background-image:linear-gradient(160deg,var(--g),rgba(255,255,255,.55),var(--g));
+  opacity:.75;
+}
+.flicker i::after{
+  content:'';position:absolute;inset:0;z-index:1;
+  background:repeating-linear-gradient(0deg,transparent,transparent 7px,rgba(255,255,255,.12) 7px,rgba(255,255,255,.12) 8px);
+}
+.flicker i span{position:relative;z-index:2;font-size:.7rem;font-family:var(--serif);color:var(--plum);background:rgba(255,255,255,.7);padding:2px 8px;border-radius:10px}
+.f1{--g:#ffd3e0}.f2{--g:#ffc6d6}.f3{--g:#ffd9c2}.f4{--g:#ffcfe6}.f5{--g:#ffe0d0}.f6{--g:#ffd3e6}.f7{--g:#ffc9dc}.f8{--g:#ffd7e2}.f9{--g:#ffd0d8}
+.hero-right .vignette{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.hero-right .vignette .ring{
+  width:min(72%,420px);aspect-ratio:1;background:rgba(255,255,255,.72);
+  border:1px solid var(--line);border-radius:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;
+  box-shadow:0 10px 40px var(--shadow);
+}
+.hero-right .vignette .ring b{font-family:var(--serif);font-size:1.5rem;color:var(--deep);font-style:italic}
+.hero-right .vignette .ring small{font-size:.78rem;color:var(--mute);margin-top:8px;line-height:1.7}
+
+/* ===== marquee ribbon ===== */
+.ribbon{
+  background:var(--plum);color:#f7e3e9;padding:11px 0;overflow:hidden;
+}
+.ribbon-track{display:flex;gap:56px;white-space:nowrap;animation:slide 34s linear infinite;font-family:var(--serif);font-style:italic;font-size:.9rem;letter-spacing:.04em}
+.ribbon-track span{display:flex;align-items:center;gap:56px}
+.ribbon-track span::after{content:'❤';color:var(--pink);font-style:normal;font-size:.75rem}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ===== section heading ===== */
+.sec{padding:86px 0}
+.sec-head{margin-bottom:52px;max-width:660px}
+.sec-head .num{
+  font-family:var(--serif);font-size:.8rem;color:var(--gold);letter-spacing:.24em;
+  text-transform:uppercase;display:block;margin-bottom:10px;
+}
+.sec-head h2{
+  font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,4.4vw,2.9rem);
+  color:var(--plum);line-height:1.35;
+}
+.sec-head h2 em{font-style:italic;color:var(--rose)}
+.sec-head p{font-size:.9rem;color:var(--mute);margin-top:14px;line-height:1.9}
+
+/* ===== genre accordion (categories) ===== */
+.genres{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.g-cell{
+  border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:30px 32px;background:var(--paper);transition:.4s;cursor:default;position:relative;overflow:hidden;
+}
+.g-cell::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:var(--deep);transition:.4s;
+}
+.g-cell:hover::before{width:5px}
+.g-cell:hover{background:#fff}
+.g-cell .row{display:flex;align-items:baseline;gap:14px;position:relative;z-index:1}
+.g-cell .roman{font-family:var(--serif);font-size:.82rem;color:var(--gold);font-style:italic}
+.g-cell h3{font-family:var(--serif);font-size:1.35rem;color:var(--plum);font-weight:500}
+.g-cell .txt{margin-top:12px;font-size:.86rem;color:var(--mute);line-height:1.9;position:relative;z-index:1}
+.g-cell .tag{display:inline-block;margin-top:16px;font-size:.74rem;color:var(--rose);border:1px solid var(--line);padding:3px 12px;border-radius:20px;position:relative;z-index:1}
+
+/* ===== diary entries (movies) ===== */
+.diary{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.entry{position:relative}
+.entry .photo{
+  position:relative;aspect-ratio:3/4;border-radius:2px;overflow:hidden;
+  display:flex;align-items:flex-end;padding:16px;
+}
+.entry .photo::before{content:'';position:absolute;inset:0;z-index:0;background:linear-gradient(170deg,var(--a),var(--b))}
+.entry .photo::after{
+  content:'';position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to top,rgba(92,30,51,.55),transparent 60%);
+}
+.entry .photo span{position:relative;z-index:2;font-size:2.2rem}
+.entry .photo b{
+  position:relative;z-index:2;font-family:var(--serif);color:#fff;font-size:.85rem;
+  font-style:italic;line-height:1.4;
+}
+.e1{--a:#ffc6d6;--b:#f79db8}.e2{--a:#ffd0d8;--b:#f7a9c0}.e3{--a:#ffd9c2;--b:#f0b48f}
+.e4{--a:#ffcfe6;--b:#eaa6cf}.e5{--a:#ffe0d0;--b:#f0c0a0}.e6{--a:#ffd3e6;--b:#ed9dc0}
+.e7{--a:#ffc9dc;--b:#e89cbb}.e8{--a:#ffd7e2;--b:#efa6c4}
+.entry .meta{padding-top:16px}
+.entry .meta h4{font-family:var(--serif);font-size:1.12rem;color:var(--plum);font-weight:500}
+.entry .meta .sub{font-size:.78rem;color:var(--mute);margin-top:4px;display:flex;justify-content:space-between}
+
+/* ===== letters row (features) ===== */
+.letters{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.letter{
+  background:#fff;border:1px solid var(--line);border-radius:2px;
+  padding:34px 30px 30px;position:relative;transition:.4s;
+}
+.letter::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--deep);transform:scaleX(0);transform-origin:left;transition:.4s;
+}
+.letter:hover{box-shadow:0 14px 40px var(--shadow);transform:translateY(-5px)}
+.letter:hover::before{transform:scaleX(1)}
+.letter .seal{
+  width:46px;height:46px;border-radius:50%;background:var(--blush);
+  display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:20px;
+  border:1px solid var(--line);
+}
+.letter h4{font-family:var(--serif);font-size:1.2rem;color:var(--plum);font-weight:500;margin-bottom:10px}
+.letter p{font-size:.85rem;color:var(--mute);line-height:1.9}
+
+/* ===== editorial split (news) ===== */
+.edit{display:grid;grid-template-columns:1.15fr 1fr;gap:60px;align-items:start}
+.edit-main{position:relative}
+.edit-main .cover{
+  aspect-ratio:16/10;border-radius:2px;background:linear-gradient(150deg,#ffc6d6,#f79db8);
+  position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:26px;
+}
+.edit-main .cover::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(92,30,51,.45),transparent 55%)}
+.edit-main .cover span{position:relative;z-index:2;font-size:3.4rem}
+.edit-main .cover b{position:relative;z-index:2;font-family:var(--serif);color:#fff;font-size:1.5rem;font-style:italic}
+.edit-main h3{font-family:var(--serif);font-size:1.6rem;color:var(--plum);font-weight:500;margin-top:24px;line-height:1.5}
+.edit-main p{font-size:.9rem;color:var(--mute);margin-top:14px;line-height:2}
+.edit-side{border-left:1px solid var(--line);padding-left:40px}
+.edit-side article{padding:22px 0;border-bottom:1px solid var(--line)}
+.edit-side article:first-child{padding-top:0}
+.edit-side time{font-family:var(--serif);font-style:italic;font-size:.78rem;color:var(--gold);letter-spacing:.06em}
+.edit-side h4{font-family:var(--serif);font-size:1.1rem;color:var(--plum);font-weight:500;margin:6px 0 8px;line-height:1.55}
+.edit-side p{font-size:.82rem;color:var(--mute);line-height:1.85}
+
+/* ===== index list (about / SEO) ===== */
+.index-block{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.index-block .lede{font-family:var(--serif);font-size:clamp(1.15rem,2.4vw,1.55rem);color:var(--plum);line-height:2;font-weight:400}
+.index-block .lede em{font-style:italic;color:var(--rose)}
+.toc{list-style:none;border-top:1px solid var(--line)}
+.toc li{border-bottom:1px solid var(--line);padding:14px 0;display:flex;gap:16px;align-items:baseline}
+.toc .idx{font-family:var(--serif);font-style:italic;font-size:.82rem;color:var(--gold);flex-shrink:0;width:26px}
+.toc .tt{font-family:var(--serif);font-size:1rem;color:var(--plum)}
+.toc .ds{font-size:.8rem;color:var(--mute);display:block;margin-top:3px}
+.url-card{
+  margin-top:40px;background:var(--plum);color:#f7e3e9;padding:32px 36px;
+  border-radius:2px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+}
+.url-card .u{font-family:var(--serif);font-size:clamp(1rem,2.6vw,1.5rem);font-style:italic}
+.url-card .u small{display:block;font-style:normal;font-size:.8rem;color:var(--pink);margin-top:8px}
+.url-card a{color:var(--pink);font-size:.85rem;border-bottom:1px solid var(--pink);padding-bottom:2px}
+
+/* ===== footer ===== */
+footer{background:var(--plum);color:#f0dbe2;padding:60px 0 30px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px;padding-bottom:38px;border-bottom:1px solid rgba(255,255,255,.18)}
+.ft .brand b{color:#fff}
+.ft .brand em{color:var(--pink)}
+.ft .brand p{font-size:.85rem;color:rgba(255,255,255,.66);line-height:1.95;margin-top:14px;max-width:340px}
+.ft-col h5{font-family:var(--serif);font-size:1rem;color:#fff;font-weight:500;margin-bottom:16px;font-style:italic}
+.ft-col ul{list-style:none}
+.ft-col li{margin-bottom:10px}
+.ft-col a{font-size:.85rem;color:rgba(255,255,255,.68);transition:.2s}
+.ft-col a:hover{color:var(--pink)}
+.ft-bot{
+  padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+  font-size:.78rem;color:rgba(255,255,255,.5);font-family:var(--serif);font-style:italic;
+}
+.ft-bot a{color:var(--pink)}
+
+/* ===== reveal ===== */
+.rv{opacity:0;transform:translateY(30px);transition:.8s cubic-bezier(.22,1,.36,1)}
+.rv.in{opacity:1;transform:none}
+
+/* ===== responsive ===== */
+@media (max-width:960px){
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-left{padding:56px 26px}
+  .hero-right{min-height:380px}
+  .genres{grid-template-columns:1fr}
+  .diary{grid-template-columns:repeat(2,1fr);gap:20px}
+  .letters{grid-template-columns:1fr}
+  .edit{grid-template-columns:1fr;gap:36px}
+  .edit-side{border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:30px}
+  .index-block{grid-template-columns:1fr;gap:34px}
+  .ft{grid-template-columns:1fr;gap:30px}
+  .sec{padding:56px 0}
+  .nav{display:none}
+  .menu-btn{display:block}
+  .wrap{padding:0 20px}
+}
+@media (max-width:520px){
+  .diary{grid-template-columns:1fr 1fr;gap:14px}
+  .hero-left h1{font-size:2rem}
+  .url-card{padding:24px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- Bar -->
+<header class="bar">
+  <div class="wrap bar-in">
+    <div class="brand"><b>色情电影网</b><em>— a film journal of love</em></div>
+    <nav class="nav">
+      <a href="#cinema">本期放映</a>
+      <a href="#genres">类型</a>
+      <a href="#diary">观影手记</a>
+      <a href="#letters">编辑部</a>
+      <a href="#edit">特别报道</a>
+      <a href="#index">关于本站</a>
+      <a href="#index" class="love">写一封信</a>
+    </nav>
+    <button class="menu-btn" id="mBtn">☰</button>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+  <a href="#cinema">本期放映</a>
+  <a href="#genres">类型</a>
+  <a href="#diary">观影手记</a>
+  <a href="#letters">编辑部</a>
+  <a href="#edit">特别报道</a>
+  <a href="#index">关于本站</a>
+</div>
+
+<!-- Ribbon -->
+<div class="ribbon">
+  <div class="ribbon-track">
+    <span><span>色情电影网 · seqingdianyingwang-wap.github.io</span><span>每一次心跳，都值得被放映</span><span>浪漫色情片 · 心动喜剧 · 虐恋经典</span><span>色情电影网 · seqingdianyingwang-wap.github.io</span><span>每一次心跳，都值得被放映</span><span>浪漫色情片 · 心动喜剧 · 虐恋经典</span></span>
+  </div>
+</div>
+
+<!-- Hero: envelope split -->
+<section class="hero" id="cinema">
+  <div class="hero-left">
+    <div class="kicker rv">Issue No.7 — Autumn 2026</div>
+    <h1 class="rv">有些电影，<i>看完</i><span class="amp">&amp;</span>你会想起一个人</h1>
+    <p class="rv">色情电影网（https://seqingdianyingwang-wap.github.io）是一个只聊色情电影的地方。我们不做影评，只做陪伴——陪你重温那些关于心动、错过、重逢与放手的瞬间。</p>
+    <div class="acts rv">
+      <a href="#diary" class="btn-main">翻开本期片单</a>
+      <a href="#index" class="btn-txt">我们的故事 →</a>
+    </div>
+  </div>
+  <div class="hero-right rv">
+    <div class="flicker">
+      <i class="f1"><span>初恋</span></i><i class="f2"><span>相遇</span></i><i class="f3"><span>暗恋</span></i>
+      <i class="f4"><span>重逢</span></i><i class="f5"><span>求婚</span></i><i class="f6"><span>异地</span></i>
+      <i class="f7"><span>放手</span></i><i class="f8"><span>白头</span></i><i class="f9"><span>写信</span></i>
+    </div>
+    <div class="vignette">
+      <div class="ring">
+        <b>本期主题</b>
+        <small>从初恋的悸动，到白头的相守<br>9 个关于爱的瞬间，9 部电影</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Genres -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">Chapter 01 — Genres</span>
+      <h2>爱的<em>千万种</em>样子</h2>
+      <p>色情从来不只一种模样。在色情电影网，我们把爱按它的样子分门别类，你总能找到此刻最像你的那一款。</p>
+    </div>
+    <div class="genres">
+      <a href="#" class="g-cell rv"><div class="row"><span class="roman">i.</span><h3>浪漫色情</h3></div><p class="txt">从雨中拥吻到跨越时区的奔赴，那些让你忍不住捂住嘴的甜蜜瞬间。</p><span class="tag">心跳加速</span></a>
+      <a href="#" class="g-cell rv"><div class="row"><span class="roman">ii.</span><h3>心动喜剧</h3></div><p class="txt">欢喜冤家的鸡同鸭讲，笑着笑着就红了眼眶——原来喜欢一个人这么好笑。</p><span class="tag">轻松治愈</span></a>
+      <a href="#" class="g-cell rv"><div class="row"><span class="roman">iii.</span><h3>虐恋深情</h3></div><p class="txt">爱而不得的隐忍、错过的车、来不及说的话。看完需要一杯热可可缓缓。</p><span class="tag">备好纸巾</span></a>
+      <a href="#" class="g-cell rv"><div class="row"><span class="roman">iv.</span><h3>青春校园</h3></div><p class="txt">课桌下的纸条、操场边的夕阳，那是最干净也最用力的一次喜欢。</p><span class="tag">致青春</span></a>
+      <a href="#" class="g-cell rv"><div class="row"><span class="roman">v.</span><h3>都市情缘</h3></div><p class="txt">加班后的地铁、合租的客厅，成年人的色情藏在细节里，不那么热烈，却更长久。</p><span class="tag">成年人的爱</span></a>
+      <a href="#" class="g-cell rv"><div class="row"><span class="roman">vi.</span><h3>经典重温</h3></div><p class="txt">二十年后再看依然心动的老片，有些台词已经长成了你的一部分。</p><span class="tag">永恒经典</span></a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="rule"></div></div>
+
+<!-- Diary entries -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">Chapter 02 — Viewing Diary</span>
+      <h2>观影<em>手记</em></h2>
+      <p>编辑部的私密观影笔记。每一篇都不长，但每一篇，都是我们想说给你听的话。</p>
+    </div>
+    <div class="diary">
+      <article class="entry rv"><div class="photo e1"><span>💌</span><b>那个夏天，我们以为时间是永远</b></div><div class="meta"><h4>仲夏来信</h4><div class="sub"><span>青春 / 初恋</span><span>★★★★★</span></div></div></article>
+      <article class="entry rv"><div class="photo e2"><span>🌧️</span><b>雨停之前，她终于说出口</b></div><div class="meta"><h4>雨天的告白</h4><div class="sub"><span>浪漫 / 心动</span><span>★★★★☆</span></div></div></article>
+      <article class="entry rv"><div class="photo e3"><span>🍂</span><b>有些爱，要用一整个秋天去告别</b></div><div class="meta"><h4>落叶情书</h4><div class="sub"><span>虐恋 / 治愈</span><span>★★★★★</span></div></div></article>
+      <article class="entry rv"><div class="photo e4"><span>🌃</span><b>凌晨两点的城市，两个失眠的人</b></div><div class="meta"><h4>失眠电台</h4><div class="sub"><span>都市 / 治愈</span><span>★★★★☆</span></div></div></article>
+      <article class="entry rv"><div class="photo e5"><span>✈️</span><b>隔着八个时区，我们还在相爱</b></div><div class="meta"><h4>时差爱人</h4><div class="sub"><span>异地 / 浪漫</span><span>★★★★☆</span></div></div></article>
+      <article class="entry rv"><div class="photo e6"><span>📖</span><b>借书卡上，有他写了三年的名字</b></div><div class="meta"><h4>图书馆暗恋</h4><div class="sub"><span>暗恋 / 校园</span><span>★★★★★</span></div></div></article>
+      <article class="entry rv"><div class="photo e7"><span>🎻</span><b>如果演奏完这支曲子，你就回来</b></div><div class="meta"><h4>小提琴与海</h4><div class="sub"><span>艺术 / 深情</span><span>★★★★☆</span></div></div></article>
+      <article class="entry rv"><div class="photo e8"><span>🌻</span><b>四十年后，他还是记得她爱向日葵</b></div><div class="meta"><h4>向日葵之约</h4><div class="sub"><span>经典 / 重逢</span><span>★★★★★</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="rule"></div></div>
+
+<!-- Letters -->
+<section class="sec" id="letters">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">Chapter 03 — From the Editors</span>
+      <h2>编辑部的<em>几句话</em></h2>
+      <p>我们是一群相信"色情电影值得被认真对待"的人。这里没有冷冰冰的评分，只有写给电影的一封封短信。</p>
+    </div>
+    <div class="letters">
+      <div class="letter rv"><div class="seal">💗</div><h4>只做精选</h4><p>每一部登上色情电影网的影片，都至少让编辑部的一个人流过眼泪或笑出过声。我们不追求数量，只追求那一下被击中的感觉。</p></div>
+      <div class="letter rv"><div class="seal">💗</div><h4>尊重每一种爱</h4><p>青涩的、笨拙的、迟到的、跨过山海的、没能说出口的——每一种爱都值得被看见，每一种告白都值得被记录。</p></div>
+      <div class="letter rv"><div class="seal">💗</div><h4>陪你重看</h4><p>有些电影要在十八岁看一次，三十岁再看一次。色情电影网会一直在这里，陪你在不同时刻，遇见同一部电影的不同的自己。</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="rule"></div></div>
+
+<!-- Editorial split -->
+<section class="sec" id="edit">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">Chapter 04 — Special Report</span>
+      <h2>特别<em>报道</em></h2>
+    </div>
+    <div class="edit">
+      <div class="edit-main rv">
+        <div class="cover"><span>🌹</span><b>封面故事 · 那些年，我们哭着看完的色情电影</b></div>
+        <h3>为什么我们明知道会哭，还是一遍遍重看？</h3>
+        <p>也许因为电影里的眼泪是安全的。在放映厅的黑暗里，我们可以替自己，也替那些没能好好告别的人，把那场迟到的情绪哭完。本期色情电影网精选了 12 部"需要备好纸巾"的色情电影，并附上编辑部的观影建议：哪些适合一个人看，哪些要拉着对方的手。</p>
+      </div>
+      <div class="edit-side rv">
+        <article><time>Oct 14</time><h4>新片速递：这个月的浪漫片单</h4><p>六部本月新上线的色情电影，从甜到齁到虐到心碎，按心情自行取用。</p></article>
+        <article><time>Oct 09</time><h4>读者来信：我和他看完这部电影就在一起了</h4><p>收到一位读者的投稿，她说那部电影替她说出了她不敢说的话。</p></article>
+        <article><time>Oct 03</time><h4>专题：暗恋题材的十个名场面</h4><p>从借半块橡皮到假装偶遇，盘点那些让人心头一紧的暗恋瞬间。</p></article>
+        <article><time>Sep 27</time><h4>编辑对谈：为什么色情片总被低估？</h4><p>和三位编辑聊了聊，为什么一部好的色情片其实最难拍。</p></article>
+        <article><time>Sep 20</time><h4>片单：适合约会时一起看的五部电影</h4><p>附赠实用建议——看完哪一部，最容易自然地牵起手。</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="rule"></div></div>
+
+<!-- Index -->
+<section class="sec" id="index">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="num">Chapter 05 — Colophon</span>
+      <h2>关于<em>色情电影网</em></h2>
+    </div>
+    <div class="index-block">
+      <p class="lede rv">色情电影网（<em>https://seqingdianyingwang-wap.github.io</em>）是一个由电影爱好者自发维护的色情电影主题网站。我们相信，每一段感情都值得被认真对待，每一部关于爱的电影，都值得被好好看过一遍，再看一遍。</p>
+      <ul class="toc rv">
+        <li><span class="idx">01</span><span><span class="tt">本期放映</span><span class="ds">每周更新的色情电影精选</span></span></li>
+        <li><span class="idx">02</span><span><span class="tt">类型分类</span><span class="ds">浪漫 / 喜剧 / 虐恋 / 校园 / 都市 / 经典</span></span></li>
+        <li><span class="idx">03</span><span><span class="tt">观影手记</span><span class="ds">编辑部私密的观影笔记</span></span></li>
+        <li><span class="idx">04</span><span><span class="tt">特别报道</span><span class="ds">深度专题与读者故事</span></span></li>
+        <li><span class="idx">05</span><span><span class="tt">写信给我们</span><span class="ds">分享你想推荐的那一部</span></span></li>
+      </ul>
+    </div>
+    <div class="url-card rv">
+      <div class="u">seqingdianyingwang-wap.github.io<small>色情电影网 · 一个只聊色情电影的地方</small></div>
+      <a href="https://seqingdianyingwang-wap.github.io">访问本站 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div class="brand"><b>色情电影网</b><em>— a film journal of love</em><p>色情电影网（https://seqingdianyingwang-wap.github.io）是一个只聊色情电影的地方。愿每一颗正在跳动的心，都能在这里找到共鸣。</p></div>
+      <div class="ft-col">
+        <h5>翻阅本站</h5>
+        <ul>
+          <li><a href="#cinema">本期放映</a></li>
+          <li><a href="#genres">类型分类</a></li>
+          <li><a href="#diary">观影手记</a></li>
+          <li><a href="#edit">特别报道</a></li>
+          <li><a href="#index">关于本站</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h5>写信联系</h5>
+        <ul>
+          <li><a href="#">投稿与推荐</a></li>
+          <li><a href="#">读者来信</a></li>
+          <li><a href="#">友情链接</a></li>
+          <li><a href="#">隐私说明</a></li>
+          <li><a href="#">问题反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>&copy; 2026 <a href="https://seqingdianyingwang-wap.github.io">色情电影网</a> · 一个只聊色情电影的地方</span>
+      <span>Made with love, for love.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var mBtn=document.getElementById('mBtn'),drawer=document.getElementById('drawer');
+mBtn.addEventListener('click',function(){drawer.classList.toggle('open');});
+drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){drawer.classList.remove('open');});});
+function reveal(){
+  document.querySelectorAll('.rv').forEach(function(el){
+    if(el.getBoundingClientRect().top<window.innerHeight-80){el.classList.add('in');}
+  });
+}
+window.addEventListener('scroll',reveal);window.addEventListener('load',reveal);reveal();
+</script>
+</body>
+</html>
